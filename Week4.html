@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html scroll-behavior: smooth>
+  <head>
+      <meta charset="UTF-8">
+      <title>Tech Dept.</title>
+      <link rel="icon" type="image/x-icon" href="Photos/download-removebg-preview.png">
+      <style>
+        * {box-sizing:border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+          height: 100%;
+        }
+  
+        .dots-container {
+          text-align: right;
+          margin-top: 10px;
+        }
+        .mySlides {
+          display: none;
+        }
+  
+  
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          margin-top: -22px;
+          padding: 16px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+  
+  
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+  
+  
+        .prev:hover, .next:hover {
+          background-color: rgba(0,0,0,0.8);
+        }
+  
+  
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+  
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+  
+        .active, .dot:hover {
+          background-color: #717171;
+        }
+  
+  
+        .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+  
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+  
+        header {
+          margin: 0;
+          padding: 0;
+          background-color: rgb(13,111,126); 
+          border: 2px solid #333;
+          color: #fff; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+        }
+  
+        .logo a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 24px;
+          font-weight: bold;
+        }
+  
+        .website-name{
+          font-size: 40px;
+          font-weight: bold;
+        }
+  
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+  
+        nav li {
+          margin: 0 20px;
+          position: relative;
+        }
+  
+        nav a {
+          text-decoration: none;
+          color: #fff;
+        }
+  
+        nav a:hover {
+          text-decoration: underline;
+        }
+  
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #333;
+          min-width: 160px;
+          z-index: 1;
+        }
+  
+        .dropdown-content a {
+          color: #fff;
+          padding: 10px;
+          text-decoration: none;
+          display: block;
+        }
+  
+        nav li:hover .dropdown-content {
+          display: block;
+        }
+  
+        .container {
+          display: flex;
+          align-items: center;
+          border: 2px solid #000;
+          padding: 20px;
+          border-radius: 8px;
+          overflow: hidden;
+        }
+  
+        .content {
+          flex: 1;
+        }
+  
+        .image {
+          margin-left: 20px;
+        }
+  
+  
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+  
+      .GeneratedMarquee {
+        font-family:'Comic Sans MS';
+        font: size 100%;;
+        line-height:1.3em;
+        color:#000000;
+        padding:0;
+      }
+
+      
+      .container {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      p {
+        color: rgba(170, 39, 62);
+        text-align: justify;
+        width: 100%;
+      }
+
+      h1 {
+        color: rgb(252, 251, 251);
+        text-align: justify;
+      }
+
+      @media screen and (max-width: 1000px) {
+        p {
+          font-size: 12px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+      }
+
+      @media screen and (min-width: 1001px) and (max-width: 1540px) {
+        p {
+          font-size: 16px;
+        }
+
+        h1 {
+          font-size: 30px;
+        }
+      }
+
+      @media screen and (min-width: 1541px) and (max-width: 1999px) {
+        p {
+          font-size: 20px;
+        }
+
+        h1 {
+          font-size: 32px;
+        }
+      }
+
+      @media screen and (min-width: 2000px) {
+        p {
+          font-size: 23px;
+        }
+
+        h1 {
+          font-size: 48px;
+        }
+      }
+
+      .white-spacer {
+        background-color: rgba(170,39,62);
+        height: 60px;
+      }
+
+  </style>
+  </head>
+
+  <body style="background-color:#eeeeee; 
+              background-size: cover; 
+              background-repeat: no-repeat;">
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="Photos/Z.png" width="15%" height="15%"></a>
+      </div>
+      <div class="website-name" style="font-family:'Calibri'; font-size: 300%; white-space: nowrap; margin-right: 10%;">Vlad's 2023-2024 Website</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="WeeklyJournal.html">Weekly Journal</a>
+            <div class="dropdown-content">
+              <a href="Week1.html" style="color: white;"> Week 1 </a>
+              <a href="Week2.html" style="color: white;"> Week 2 </a>
+              <a href="Week3.html" style="color: white;"> Week 3 </a>
+              <a href="Week4.html" style="color: white;"> Week 4 </a>
+              <a href="Week5.html" style="color: white;"> Week 5 </a>
+              <a href="Week6.html" style="color: white;"> Week 6 </a>
+              <a href="Week7.html" style="color: white;"> Week 7 </a>
+              <a href="Week8.html" style="color: white;"> Week 8 </a>
+              <a href="Week9.html" style="color: white;"> Week 9 </a>
+              <a href="Week10.html" style="color: white;"> Week 10 </a>
+              <a href="Week11.html" style="color: white;"> Week 11 </a>
+              <a href="Week12.html" style="color: white;"> Week 12 </a>
+              <a href="Week13.html" style="color: white;"> Week 13 </a>
+              <a href="Week14.html" style="color: white;"> Week 14 </a>
+              <a href="Week15.html" style="color: white;"> Week 15 </a>
+              <a href="Week16.html" style="color: white;"> Week 16 </a>
+              <a href="Week17.html" style="color: white;"> Week 17 </a>
+              <a href="Week18.html" style="color: white;"> Week 18 </a>
+              <a href="Week19.html" style="color: white;"> Week 19 </a>
+              <a href="Week20.html" style="color: white;"> Week 20 </a>
+            </div>
+          </li>
+          <li><a href="UsefulBookmarks.html">Useful Bookmarks</a></li>
+          <li><a href="ClassProjects.html">Class Projects</a></li>
+        </ul>
+      </nav> 
+    </header>
+
+    <header style="background-image: url('Photos/GARanHiXUAA9Xbx.jpeg'); color: #fff; text-align: center; margin-top: 0; height: 100%; width: 100%; background-repeat: repeat">
+        <center>
+          <h1 style="text-align: center; font-size: 100px; font-family: 'Brush Script MT';">  Week 1 </h1>
+        </center>
+      </header>
+      <div class="white-spacer"></div>
