@@ -20,11 +20,6 @@
           background-position: center center;
         }
 
-
-        /* ====================================
-        Navigation 
-        ==================================== */
-
         .overlay-navigation {
           position: fixed;
           z-index: 99;
@@ -173,11 +168,6 @@
           animation: slide-in-nav-item-reverse .3s linear 1 both;
         }
 
-
-        /* ====================================
-        Burger king
-        ==================================== */
-
         .open-overlay {
           position: absolute;
           right: 5rem;
@@ -219,11 +209,6 @@
         .animate-out-middle-bar {
           animation: animate-out-middle-bar .6s linear 1 both
         }
-
-
-        /* ====================================
-        Animation keyframes
-        ==================================== */
 
         @keyframes slide-in-nav-item {
           from {
@@ -376,6 +361,11 @@
           font-size: 100%;
           margin: 0;
           padding: 0;
+          transition: box-shadow 0.3s; 
+        }
+
+        .portfolio-title:hover {
+          box-shadow: 0 0 10px rgba(184, 21, 21, 0.8); 
         }
 
         .portfolio-title p {
